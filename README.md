@@ -1,5 +1,3 @@
-# mua
-
 This is a Rails 5 app.
 
 ## Documentation

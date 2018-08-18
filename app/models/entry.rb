@@ -14,4 +14,5 @@
 
 class Entry < ApplicationRecord
     mount_uploader :image, ImageUploader
+    CATEGORY = [ "MUA", "MODEL" ]
 end

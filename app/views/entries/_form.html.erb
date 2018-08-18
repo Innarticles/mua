@@ -5,6 +5,7 @@
   <%= f.text_field :name %>
   <%= f.text_area :content, rows: 5 %>
   <%= f.text_field :category %>
+  <%= f.select :category, Entry::CATEGORY, include_blank: false %>
   <%= f.text_field :ig_handle %>
   <div class="field">
     add an image....

@@ -1,0 +1,17 @@
+<%= bootstrap_form_for(@entry) do |f| %>
+
+  <%= f.alert_message "Please review the problems below:" %>
+
+  <%= f.text_field :name %>
+  <%= f.text_area :content, rows: 5 %>
+  <%= f.text_field :category %>
+  <%= f.text_field :ig_handle %>
+  <div class="field">
+    add an image....
+    <%= f.file_field :image %>
+  </div>
+
+  <%= f.primary %>
+  <%= link_to "Back", entries_path, class: "btn btn-link" %>
+
+<% end %>

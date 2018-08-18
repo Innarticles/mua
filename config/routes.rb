@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :entries
   mount Sidekiq::Web => "/sidekiq" # monitoring console
 
   root "home#index"

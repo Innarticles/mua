@@ -1,0 +1,34 @@
+<% provide(:title) do %>
+  Entry #<%= @entry.id %>
+<% end %>
+
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th class="col-sm-2">Name</th>
+      <td><%= @entry.name %></td>
+    </tr>
+    <tr>
+      <th class="col-sm-2">Content</th>
+      <td><%= @entry.content %></td>
+    </tr>
+    <tr>
+      <th class="col-sm-2">Category</th>
+      <td><%= @entry.category %></td>
+    </tr>
+    <tr>
+      <th class="col-sm-2">Ig handle</th>
+      <td><%= @entry.ig_handle %></td>
+    </tr>
+    <tr>
+      <th class="col-sm-2">Image</th>
+      <td><%= image_tag(@entry.image_url.to_s) %></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<p>
+  <%= link_to "Edit", edit_entry_path(@entry), class: "btn btn-primary" %>
+  <%= link_to "Back", entries_path, class: "btn btn-link" %>
+</p>

@@ -61,3 +61,6 @@ group :test do
   gem "shoulda-context"
   gem "shoulda-matchers", ">= 3.0.1"
 end
+gem 'carrierwave'
+gem 'mini_magick' # For different versions of an image
+gem 'carrierwave-aws'

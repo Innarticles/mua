@@ -1,15 +1,14 @@
-<%= bootstrap_form_for(@entry) do |f| %>
+<%= bootstrap_form_for(@entry, multipart: true) do |f| %>
 
   <%= f.alert_message "Please review the problems below:" %>
 
   <%= f.text_field :name %>
   <%= f.text_area :content, rows: 5 %>
-  <%= f.text_field :category %>
   <%= f.select :category, Entry::CATEGORY, include_blank: false %>
   <%= f.text_field :ig_handle %>
   <div class="field">
     add an image....
-    <%= f.file_field :image %>
+    <%= f.file_field :main_image %>
   </div>
 
   <%= f.primary %>

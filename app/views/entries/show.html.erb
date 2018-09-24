@@ -22,7 +22,10 @@
     </tr>
     <tr>
       <th class="col-sm-2">Image</th>
-      <td><%= image_tag(@entry.image_url.to_s) %></td>
+      <td>
+                                  
+            <%= image_tag @entry.main_image.attached? ? url_for(@entry.main_image) : '' %>
+
     </tr>
     
   </tbody>

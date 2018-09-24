@@ -18,11 +18,12 @@ gem "marco-polo"
 gem "pg", ">= 0.18"
 gem "pgcli-rails"
 gem "puma", "~> 3.7"
-gem "rails", "~> 5.1.6"
+gem "rails", "~> 5.2"
 gem "sass-rails", "~> 5.0"
 gem "sidekiq", ">= 4.2.0"
 gem "turbolinks", "~> 5"
 
+gem "aws-sdk-s3", require: false
 group :production, :staging do
   gem "postmark-rails"
 end
@@ -64,3 +65,4 @@ end
 gem 'carrierwave'
 gem 'mini_magick' # For different versions of an image
 gem 'carrierwave-aws'
+gem 'delayed_job_active_record'

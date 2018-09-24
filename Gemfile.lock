@@ -336,6 +336,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uglifier (4.1.19)
+      execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
@@ -402,6 +404,7 @@ DEPENDENCIES
   terminal-notifier
   terminal-notifier-guard
   turbolinks (~> 5)
+  uglifier
   xray-rails (>= 0.1.18)
 
 RUBY VERSION

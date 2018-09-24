@@ -66,3 +66,5 @@ gem 'carrierwave'
 gem 'mini_magick' # For different versions of an image
 gem 'carrierwave-aws'
 gem 'delayed_job_active_record'
+gem 'uglifier'
+

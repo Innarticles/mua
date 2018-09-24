@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :entries
 
-  root "home#index"
+  root "entries#index"
 end

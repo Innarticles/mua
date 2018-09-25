@@ -31,7 +31,7 @@ PreCommit:
     enabled: true
 
   RailsSchemaUpToDate:
-    enabled: true
+    enabled: false
 
   RuboCop:
     enabled: false

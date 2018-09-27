@@ -68,3 +68,4 @@ gem 'carrierwave-aws'
 gem 'delayed_job_active_record'
 gem 'uglifier'
 
+gem "figaro"

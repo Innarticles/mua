@@ -32,6 +32,8 @@ class EntriesController < ApplicationController
 
   # PATCH/PUT /entries/1
   def update
+  puts Rails.application.credentials[:aws][:secret_access_key]
+  puts Rails.application.credentials[:aws][:access_key_id]
     if @entry.update(entry_params)
       redirect_to @entry, notice: "Entry was successfully updated."
     else
